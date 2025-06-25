@@ -54,7 +54,7 @@ CREATE TABLE Cotizacion (
     ID_Cajero INT,
     ID_Auto INT,
     Fecha TIMESTAMP,
-    Costo DECIMAL(10,2),
+    Costo INT,
     FOREIGN KEY (ID_Cliente) REFERENCES Cliente(ID),
     FOREIGN KEY (ID_Cajero) REFERENCES Cajero(ID),
     FOREIGN KEY (ID_Auto) REFERENCES Auto(ID)
@@ -69,7 +69,7 @@ CREATE TABLE Reparacion (
     Fecha_Inicio TIMESTAMP,
     Fecha_Termino TIMESTAMP,
     Detalle VARCHAR(100),
-    Costo DECIMAL(10,2),
+    Costo INT,
     FOREIGN KEY (ID_Mecanico) REFERENCES Mecanico(ID),
     FOREIGN KEY (ID_Cotizacion) REFERENCES Cotizacion(ID),
     FOREIGN KEY (ID_Repuesto) REFERENCES Repuesto(ID)

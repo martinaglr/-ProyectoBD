@@ -1,0 +1,10 @@
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('1', '24376913-4', 'Ruth Astudillo Santander', 'gbeltran@example.net', '+56 9 2521 4443', 'Inspección);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('2', '13673299-2', 'Felipe Maximiliano Alarcón Palma', 'carcamovictoria@example.com', '+56 44 392 0378', 'Diagnóstico);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('3', '22955963-0', 'Marisol Yáñez Inostroza', 'rodriguezeugenia@example.com', '+56 2 2519 3511', 'Reparación);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('4', '13389881-0', 'Trinidad Díaz Chávez', 'jose87@example.net', '+56 64 243 2134', 'Inspección);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('5', '2759779-6', 'Dora Ana Santos Bastías', 'klizama@example.net', '+56 34 319 5060', 'Inspección);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('6', '17937808-9', 'María Patricia Apablaza Abarca', 'carlos55@example.com', '+56 2 2390 2969', 'Mantenimiento);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('7', '24550132-4', 'Mirko Humberto Villar Gómez', 'lvalenzuela@example.net', '+56 2 2274 6104', 'Reparación);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('8', '14755230-5', 'Sonia Isidora Mella Hernández', 'seguracarlos@example.org', '+56 2 2902 2795', 'Reparación);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('9', '20401926-9', 'Eliana Isidora Díaz Garay', 'carmenosorio@example.org', '+56 58 366 4331', 'Diagnóstico);
+INSERT INTO mecanico (id, rut, nombre, email, telefono, area) VALUES ('10', '11317500-2', 'Josue Silva-Castro', 'cordovalorena@example.net', '+56 73 270 0313', 'Diagnóstico);
