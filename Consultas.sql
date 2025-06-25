@@ -197,12 +197,17 @@ SHOW PROFILES;
 
 --------------------0--------------------------------------
 
+CREATE INDEX idx_reparacion_idmecanico ON Reparacion(ID_Mecanico);
+CREATE INDEX idx_mecanico_id ON Mecanico(ID);
+
+-- Consulta optimizada
 SET PROFILING = 1;
---Optimizada
+
 SELECT m.ID, m.Nombre, AVG(DATEDIFF(r.Fecha_Termino, r.Fecha_Inicio)) AS PromedioDias
 FROM Reparacion r
-JOIN Mecanico m ON r.ID = r.ID_Mecanico
+JOIN Mecanico m ON r.ID_Mecanico = m.ID
 GROUP BY m.ID, m.Nombre;
+
 SHOW PROFILES;
 
 
@@ -227,13 +232,19 @@ SHOW PROFILES;
 
 
 SET PROFILING = 1;
---Optimizado
-SELECT rep.ID, rep.Nombre, COUNT(r.ID) AS VecesUsado, SUM(r.Costo) AS TotalIngreso
+
+CREATE INDEX idx_reparacion_id_repuesto ON Reparacion(ID_Repuesto);
+CREATE INDEX idx_repuesto_nombre ON Repuesto(Nombre);
+
+SELECT
+    rep.Nombre,
+    COUNT(r.ID) AS VecesUsado,
+    SUM(r.Costo) AS TotalIngreso
 FROM Reparacion r
 JOIN Repuesto rep ON r.ID_Repuesto = rep.ID
-GROUP BY rep.ID, rep.Nombre
+GROUP BY rep.Nombre
 ORDER BY VecesUsado DESC
 LIMIT 10;
-SHOW PROFILES;
 
+SHOW PROFILES;
 

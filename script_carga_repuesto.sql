@@ -1,3 +1,6 @@
+DELETE FROM repuesto;
+ALTER TABLE repuesto AUTO_INCREMENT = 1;
+
 INSERT INTO repuesto (id, nombre, precio, marca, serial) VALUES ('1', 'Bombas de agua', '84109', 'Chevrolet', 'BT5UQLOX7E');
 INSERT INTO repuesto (id, nombre, precio, marca, serial) VALUES ('2', 'Amortiguadores', '155418', 'Chevrolet', 'NXOPB746WC');
 INSERT INTO repuesto (id, nombre, precio, marca, serial) VALUES ('3', 'Pastillas de freno', '25406', 'Nissan', 'CH37IVLP74');
