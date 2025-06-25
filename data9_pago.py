@@ -4,7 +4,7 @@ import random
 fake = Faker('es_CL')
 
 with open('script_carga_pago.sql', 'w', encoding='utf-8') as f:
-    for i in range(1, 20001):
+    for i in range(1, 11001):
         id_cliente = random.randint(1, 20001)
         id_orden = random.randint(1, 20001)
         id_cajero = random.randint(1, 11)
